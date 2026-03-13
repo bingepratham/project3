@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to BVIMIT</title>
+    <style>
+        :root {
+            --primary-blue: #003366;
+            --accent-gold: #c5a059;
+            --light-bg: #f4f7f6;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-bg);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        /* Information Section */
+        .info-section h1 {
+            color: var(--primary-blue);
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .info-section h2 {
+            color: var(--accent-gold);
+            font-size: 1.2rem;
+            margin-top: 0;
+        }
+
+        .info-section p {
+            font-size: 0.95rem;
+            text-align: justify;
+        }
+
+        /* Form Section */
+        .form-section {
+            background: var(--primary-blue);
+            padding: 30px;
+            border-radius: 8px;
+            color: white;
+        }
+
+        .form-section h3 {
+            margin-top: 0;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            box-sizing: border-box; /* Ensures padding doesn't affect width */
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: var(--accent-gold);
+            border: none;
+            color: white;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #b08e4a;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+                margin: 20px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="info-section">
+        <h1>Welcome to BVIMIT</h1>
+        <h2>Bharati Vidyapeeth's Institute of Management and Information Technology</h2>
+        <p>
+            Located in the heart of <strong>Navi Mumbai (Belapur)</strong>, BVIMIT is a constituent 
+            unit of Bharati Vidyapeeth, Pune. We are committed to providing high-quality 
+            education in Information Technology and Management.
+        </p>
+        <p>
+            Our institute is renowned for its <strong>MCA program</strong>, state-of-the-art 
+            infrastructure, and a strong placement cell that connects students with 
+            top-tier global IT companies.
+        </p>
+        <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+        <small>📍 Sector 8, Belapur, CBD, Navi Mumbai, Maharashtra 400614</small>
+    </div>
+
+    <div class="form-section">
+        <h3>Student Inquiry</h3>
+        <form action="#">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="email@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="course">Interested Course</label>
+                <select id="course">
+                    <option value="mca">MCA (Master of Computer Applications)</option>
+                    <option value="phd">Ph.D. (Computer Management)</option>
+                </select>
+            </div>
+            <button type="submit">Get Started</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
